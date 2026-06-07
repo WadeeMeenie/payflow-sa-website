@@ -1,4 +1,5 @@
 import { Check, MessageCircle } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 function Footer() {
   const logoSrc = `${import.meta.env.BASE_URL}payflow-logo.svg`;
@@ -33,15 +34,16 @@ function Footer() {
           <div>
             <p className="text-sm font-black uppercase tracking-widest text-navy">Contact</p>
             <div className="mt-4 space-y-3">
-              <a
+              <TrackedLink
                 href="https://wa.me/27816596157"
+                metaParams={{ content_name: 'Footer WhatsApp Contact' }}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="flex items-center gap-2 text-sm text-muted hover:text-payflow"
               >
                 <MessageCircle className="h-4 w-4" />
                 081 659 6157
-              </a>
+              </TrackedLink>
               <p className="text-sm text-muted">WhatsApp Support</p>
             </div>
           </div>

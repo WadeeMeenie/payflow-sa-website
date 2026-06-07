@@ -1,4 +1,5 @@
 import { X, Check, ArrowRight } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 const rows = [
   { oldWay: 'Scattered spreadsheets', payflow: 'One app for payroll flow' },
@@ -42,15 +43,16 @@ function Comparison({ whatsappLink }) {
 
       <div className="flex flex-col gap-4 border-t border-[#DDE7EF] bg-white px-6 py-6 sm:px-10 md:flex-row md:items-center md:justify-between">
         <p className="text-sm font-semibold text-navy">Ready to move away from payroll chaos?</p>
-        <a
+        <TrackedLink
           href={whatsappLink}
+          metaParams={{ content_name: 'Comparison Start Now' }}
           target="_blank"
           rel="noreferrer noopener"
           className="cta-button flex-shrink-0"
         >
           Start Now
           <ArrowRight className="h-4 w-4" />
-        </a>
+        </TrackedLink>
       </div>
     </section>
   );

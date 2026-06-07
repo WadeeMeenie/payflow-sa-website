@@ -1,4 +1,5 @@
 import { FileText, ClipboardList, AlertCircle, FolderOpen, ArrowRight } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 const pains = [
   {
@@ -36,10 +37,10 @@ function PainSection() {
             Every hour spent fixing spreadsheets, checking papers, and hunting old records is time you do not get back.
           </p>
           <div className="pt-4">
-            <a href="https://wa.me/27816596157?text=Hi%20Payflow%20SA%2C%20I%20want%20to%20start%20my%20free%20month" target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-2 text-sm font-semibold text-payflow hover:gap-3 transition-all">
+            <TrackedLink href="https://wa.me/27816596157?text=Hi%20Payflow%20SA%2C%20I%20want%20to%20start%20my%20free%20month" metaParams={{ content_name: 'Pain Section See How To Fix It' }} target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-2 text-sm font-semibold text-payflow hover:gap-3 transition-all">
               See how to fix it
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </TrackedLink>
           </div>
         </div>
 

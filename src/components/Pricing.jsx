@@ -1,4 +1,5 @@
 import { ArrowRight, Check, Sparkles } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 const plans = [
   {
@@ -7,6 +8,8 @@ const plans = [
     tone: 'payflow',
     description: 'Best for businesses that only need payroll processing and payslips.',
     action: 'Start R599 Plan',
+    value: 599,
+    metaContentName: 'Payflow SA Basic Plan',
     features: [
       'Employee setup',
       'Capture hours',
@@ -22,6 +25,8 @@ const plans = [
     tone: 'paygreen',
     description: 'Best for businesses that want payroll reports and stronger admin control.',
     action: 'Start Full Access',
+    value: 899,
+    metaContentName: 'Payflow SA Full Plan',
     featured: true,
     features: [
       'Everything in R599',
@@ -85,15 +90,21 @@ function Pricing({ whatsappLink }) {
               ))}
             </ul>
 
-            <a
+            <TrackedLink
               href={whatsappLink}
+              metaEvent="Lead"
+              metaParams={{
+                value: plan.value,
+                content_name: plan.metaContentName,
+                content_category: 'Subscription Lead',
+              }}
               target="_blank"
               rel="noreferrer noopener"
               className="cta-button-lg mt-7 w-full justify-center"
             >
               {plan.action}
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </TrackedLink>
           </article>
         ))}
       </div>

@@ -1,4 +1,5 @@
 import { ArrowRight, Check } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 function LifestyleSection({ whatsappLink }) {
   const adminImageSrc = `${import.meta.env.BASE_URL}images/payflow-happy-admin.png`;
@@ -27,15 +28,16 @@ function LifestyleSection({ whatsappLink }) {
             </div>
           </div>
           <div className="pt-4">
-            <a
+            <TrackedLink
               href={whatsappLink}
+              metaParams={{ content_name: 'Lifestyle Start Free Month' }}
               target="_blank"
               rel="noreferrer noopener"
               className="cta-button-lg"
             >
               Start Free Month
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </TrackedLink>
           </div>
         </div>
 

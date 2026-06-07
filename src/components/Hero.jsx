@@ -1,4 +1,5 @@
 import { ArrowRight, Check, Clock3, Phone, ShieldCheck } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 function Hero({ whatsappLink }) {
   const phoneImageSrc = `${import.meta.env.BASE_URL}images/payflow-phone-dashboard.png`;
@@ -25,24 +26,26 @@ function Hero({ whatsappLink }) {
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <a
+            <TrackedLink
               href={whatsappLink}
+              metaParams={{ content_name: 'Hero Start Free Month' }}
               target="_blank"
               rel="noreferrer noopener"
               className="cta-button-lg w-full sm:w-auto"
             >
               Start My Free Month
               <ArrowRight className="h-4 w-4" />
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
               href={whatsappLink}
+              metaParams={{ content_name: 'Hero Chat on WhatsApp' }}
               target="_blank"
               rel="noreferrer noopener"
               className="secondary-button-lg w-full sm:w-auto"
             >
               <Phone className="h-4 w-4" />
               Chat on WhatsApp
-            </a>
+            </TrackedLink>
           </div>
 
           <p className="text-sm text-muted">

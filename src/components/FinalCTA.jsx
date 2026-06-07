@@ -1,4 +1,5 @@
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 function FinalCTA({ whatsappLink }) {
   return (
@@ -29,24 +30,26 @@ function FinalCTA({ whatsappLink }) {
         </div>
 
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-          <a
+          <TrackedLink
             href={whatsappLink}
+            metaParams={{ content_name: 'Final CTA Start Free Month' }}
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex min-h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-full bg-white px-7 py-3.5 text-base font-black text-darknavy shadow-premium hover:-translate-y-0.5 sm:w-auto"
           >
             Start My Free Month
             <ArrowRight className="h-4 w-4" />
-          </a>
-          <a
+          </TrackedLink>
+          <TrackedLink
             href={whatsappLink}
+            metaParams={{ content_name: 'Final CTA Ask on WhatsApp' }}
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex min-h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-base font-black text-white backdrop-blur-xs hover:bg-white/20 sm:w-auto"
           >
             <MessageCircle className="h-4 w-4" />
             Ask on WhatsApp
-          </a>
+          </TrackedLink>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { MessageCircle, CheckCircle2 } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 function SetupHelp({ whatsappLink }) {
   const items = [
@@ -25,15 +26,21 @@ function SetupHelp({ whatsappLink }) {
             You can also set it up yourself inside the app. The R299 setup help is optional.
           </p>
           <div className="pt-4">
-            <a
+            <TrackedLink
               href={whatsappLink}
+              metaEvent="Lead"
+              metaParams={{
+                value: 299,
+                content_name: 'Payflow SA Setup Assistance',
+                content_category: 'Setup Lead',
+              }}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-black text-darknavy shadow-premium hover:-translate-y-0.5 sm:w-auto sm:px-8 sm:text-base"
             >
               <MessageCircle className="h-5 w-5" />
               Get Setup Help on WhatsApp
-            </a>
+            </TrackedLink>
           </div>
         </div>
 

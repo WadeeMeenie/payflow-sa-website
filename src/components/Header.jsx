@@ -1,4 +1,5 @@
 import { MessageCircle } from 'lucide-react';
+import TrackedLink from './TrackedLink.jsx';
 
 function Header({ whatsappLink }) {
   const logoSrc = `${import.meta.env.BASE_URL}payflow-logo.svg`;
@@ -16,8 +17,9 @@ function Header({ whatsappLink }) {
           <a href="#reviews" className="hover:text-payflow transition-colors">Reviews</a>
           <a href="#faq" className="hover:text-payflow transition-colors">FAQ</a>
         </nav>
-        <a
+        <TrackedLink
           href={whatsappLink}
+          metaParams={{ content_name: 'Header Start Free Month' }}
           className="cta-button"
           rel="noreferrer noopener"
           target="_blank"
@@ -25,7 +27,7 @@ function Header({ whatsappLink }) {
           <MessageCircle className="h-4 w-4" />
           <span className="hidden sm:inline">Start Free Month</span>
           <span className="sm:hidden">Start</span>
-        </a>
+        </TrackedLink>
       </div>
     </header>
   );
