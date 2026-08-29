@@ -1,0 +1,31 @@
+# Payflow SA
+
+> Payflow SA is payroll software built for South African small and medium-sized businesses.
+
+## What Payflow SA does
+
+- Captures employee hours and payroll inputs.
+- Helps businesses run payroll and review payroll totals.
+- Generates and exports payslips.
+- Organises employee, company and payroll information in one Android application.
+- Supports South African payroll workflows and Rand values.
+
+## Who it is for
+
+Payflow SA is designed for South African SMEs, business owners, payroll administrators, bookkeepers and employers who want a simpler payroll workflow than spreadsheets.
+
+## Pricing and trial
+
+The website currently offers a first month free for new customers. Pricing and plan details are published on the website and should be treated as the current source of truth.
+
+## Support
+
+Customers can contact Payflow SA through the WhatsApp call-to-action on the website.
+
+## Important limitation
+
+Payflow SA is a payroll calculation and workflow aid. Employers remain responsible for entering accurate information, reviewing payroll results and meeting their applicable legal, tax and submission obligations.
+
+## Canonical website
+
+https://mypayflowsa.co.za/
