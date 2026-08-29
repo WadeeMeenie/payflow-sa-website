@@ -16,10 +16,7 @@ function Header({ whatsappLink }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const logoSrc = `${import.meta.env.BASE_URL}payflow-logo.svg`;
-  const closeMenu = () => {
-    setMenuOpen(false);
-    setResourcesOpen(false);
-  };
+  const closeMenu = () => { setMenuOpen(false); setResourcesOpen(false); };
 
   return (
     <header className="sticky top-0 z-40 glass px-4 py-3 sm:px-6 lg:px-8">
