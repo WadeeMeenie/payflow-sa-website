@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -u "GitHub Actions <41898282+github-actions[bot]@users.noreply.github.com>""
   },
   "dependencies": {
     "lucide-react": "^0.493.0",
