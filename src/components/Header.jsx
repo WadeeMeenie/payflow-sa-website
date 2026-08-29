@@ -16,6 +16,10 @@ function Header({ whatsappLink }) {
           <a href="#setup-help" className="hover:text-payflow transition-colors">Setup Help</a>
           <a href="#reviews" className="hover:text-payflow transition-colors">Reviews</a>
           <a href="#faq" className="hover:text-payflow transition-colors">FAQ</a>
+          <span className="h-5 w-px bg-slate-200" aria-hidden="true" />
+          <a href="/knowledge/" className="hover:text-payflow transition-colors">Knowledge</a>
+          <a href="/about/" className="hover:text-payflow transition-colors">About</a>
+          <a href="/contact/" className="hover:text-payflow transition-colors">Contact</a>
         </nav>
         <TrackedLink
           href={whatsappLink}
